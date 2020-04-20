@@ -4,4 +4,6 @@ let xpub = 'xpub6CUGRUonZSQ4TWtTMmzXdrXDtypWKiKrhko4egpiMZbpiaQL2jkwSB1icqYh2cfD
 
 const convToYpub = pub.pubToYpub(xpub);
 
+const convToZpub = pub.pubToZpub(xpub);
+console.log(convToZpub);
 console.log(convToYpub);
