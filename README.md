@@ -1,4 +1,4 @@
-# pubconverter
+# pubkeyconverter
 Bitcoin extended public key converter:- convert any extended public key to either XPUB, YPUB, ZPUB
 ```
 npm i pubconverter
@@ -6,7 +6,7 @@ npm i pubconverter
 ## usage
 
 ```
-const pub = require('pubconverter');
+const pub = require('pubkeyconverter');
 
 let xpub = 'xpub6CUGRUonZSQ4TWtTMmzXdrXDtypWKiKrhko4egpiMZbpiaQL2jkwSB1icqYh2cfDfVxdx4df189oLKnC5fSwqPfgyP3hooxujYzAu3fDVmz';
 
