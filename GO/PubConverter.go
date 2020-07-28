@@ -58,7 +58,7 @@ func Ypub(pub []byte) []byte {
 
 //bytes.join or bytes.buffer.writedString()
 ypub:= bytes.join(f,data)
-return base58.encode(zpub)  
+return base58.encode(ypub)  
 }
 	
 func Zpub(pub []byte) []byte {
