@@ -23,7 +23,7 @@ Go env is set apart from GOPATH
      github.com/godtide/tester/PubConverter
      ) 
 
-  var pub byte =  "xpub6CUGRUonZSQ4TWtTMmzXdrXDtypWKiKrhko4egpiMZbpiaQL2jkwSB1icqYh2cfDfVxdx4df189oLKnC5fSwqPfgyP3hooxujYzAu3fDVmz"
+  var pub byte =  "6CUGRUonZSQ4TWtTMmzXdrXDtypWKiKrhko4egpiMZbpiaQL2jkwSB1icqYh2cfDfVxdx4df189oLKnC5fSwqPfgyP3hooxujYzAu3fDVmz"
 
  xpub = PubConverter.Xpub(pub)
 
