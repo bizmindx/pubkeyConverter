@@ -1,32 +1,33 @@
-# pubkeyconverter
-Bitcoin extended public key converter:- convert any extended public key to either XPUB, YPUB, ZPUB
-```
-npm i pubconverter
-```
-## usage
+# Bitcoin PUB Converter
+ <!-- A Bitcoin PUB converter in Golang by #https://github.com/Godtide  inspiration from #https://github.com/codaelux/pubkeyConverter   -->
+ 
+>Requirement
 
-```
-const pub = require('pubkeyconverter');
+Go env is set apart from GOPATH
 
-let xpub = 'xpub6CUGRUonZSQ4TWtTMmzXdrXDtypWKiKrhko4egpiMZbpiaQL2jkwSB1icqYh2cfDfVxdx4df189oLKnC5fSwqPfgyP3hooxujYzAu3fDVmz';
+> Deployment
 
-const convToYpub = pub.pubToYpub(xpub); //ypub6XJXj9Uhi7wYJp5aC8n9qwcj4wxxGLKMcsKHS5ibjZyhmgDZHPvW4Efre3WH2XK9595ShYEDTnWMDcPkoMrxddMHqik8PinQ1H3pHbCYAtS
+ **go get github.com/godtide/tester/PubConverter**
 
-const convToZpub = pub.pubToZpub(xpub);
-//zpub6r8o2p9croV2A7Gh2VZn42iEEv7QCxJrXyqWDUcV7aMapn2nY464gJKzfFTs2Ry4UnCFT1pmvSru6u1KX4GyRs2ti4SYydbtH17Tg8wL57f
+ xpub = PubConverter.Xpub(pub)
 
-const convToxpub = pub.pubToXpub(xpub);
-//xpub6CUGRUonZSQ4TWtTMmzXdrXDtypWKiKrhko4egpiMZbpiaQL2jkwSB1icqYh2cfDfVxdx4df189oLKnC5fSwqPfgyP3hooxujYzAu3fDVmz
+ ypub = PubConverter.Ypub(pub)
+
+ zpub = PubConverter.Zpub(pub)
 
 
-```
+# Full Example
+ package convert
 
+ import (
+     github.com/godtide/tester/PubConverter
+     ) 
 
-**Methods**
+  var pub byte =  "xpub6CUGRUonZSQ4TWtTMmzXdrXDtypWKiKrhko4egpiMZbpiaQL2jkwSB1icqYh2cfDfVxdx4df189oLKnC5fSwqPfgyP3hooxujYzAu3fDVmz"
 
-```
-pubToXpub();
-pubToZpub()
-pubToYpub()
-```
+ xpub = PubConverter.Xpub(pub)
+
+ pub = PubConverter.Ypub(pub)
+
+ zpub = PubConverter.Zpub(pub)
 

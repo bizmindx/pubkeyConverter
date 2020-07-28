@@ -16,8 +16,6 @@ import (
 var pubMap := map[string]string{"xpub":"0488b21e", "ypub": "049d7cb2", "zpub": "04b24746"}
 
 
-
-
 func Xpub(pub []byte) []byte {
 	data := base58.Decode(pub)
 	// rune splice
