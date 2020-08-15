@@ -7,27 +7,23 @@ Go env is set apart from GOPATH
 
 > Deployment
 
- **go get github.com/godtide/tester/PubConverter**
-
- xpub = PubConverter.Xpub(pub)
-
- ypub = PubConverter.Ypub(pub)
-
- zpub = PubConverter.Zpub(pub)
-
+ **go get -u github.com/godtide/tester/PubConverter**
 
 # Full Example
  package convert
 
  import (
-     github.com/godtide/tester/PubConverter
+     https://github.com/DefiLagos/pubkeyConverter
      ) 
 
-  var pub byte =  "6CUGRUonZSQ4TWtTMmzXdrXDtypWKiKrhko4egpiMZbpiaQL2jkwSB1icqYh2cfDfVxdx4df189oLKnC5fSwqPfgyP3hooxujYzAu3fDVmz"
+func main() {
+	pub := []byte("6CUGRUonZSQ4TWtTMmzXdrXDtypWKiKrhko4egpiMZbpiaQL2jkwSB1icqYh2cfDfVxdx4df189oLKnC5fSwqPfgyP3hooxujYzAu3fDVmz")
+	xpub := pubConverter.Xpub(pub)
+}
+ 
+ pub = pubConverter.Ypub(pub)
+  fmt.Println(ypub)
 
- xpub = PubConverter.Xpub(pub)
-
- pub = PubConverter.Ypub(pub)
-
- zpub = PubConverter.Zpub(pub)
+ zpub = pubConverter.Zpub(pub)
+  fmt.Println(zpub)
 
