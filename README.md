@@ -10,17 +10,15 @@ Go env is set apart from GOPATH
  **go get -u "github.com/DefiLagos/pubkeyConverter"**
 
 # Full Example
+
  package convert
 
  import ( 
-
      "fmt"
      "github.com/DefiLagos/pubkeyConverter"
-     
         )
 
 func main() {
-
 	pub := []byte("6CUGRUonZSQ4TWtTMmzXdrXDtypWKiKrhko4egpiMZbpiaQL2jkwSB1icqYh2cfDfVxdx4df189oLKnC5fSwqPfgyP3hooxujYzAu3fDVmz")
 
 	xpub := pubConverter.Xpub(pub)
@@ -31,7 +29,6 @@ func main() {
 
     zpub = pubConverter.Zpub(pub)
     fmt.Println(zpub)
-
 }
  
  
