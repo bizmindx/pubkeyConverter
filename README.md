@@ -21,7 +21,7 @@ Go env is set apart from GOPATH
         
 func main() {
 
-	pub := []byte("6CUGRUonZSQ4TWtTMmzXdrXDtypWKiKrhko4egpiMZbpiaQL2jkwSB1icqYh2cfDfVxdx4df189oLKnC5fSwqPfgyP3hooxujYzAu3fDVmz")
+	pub := "6CUGRUonZSQ4TWtTMmzXdrXDtypWKiKrhko4egpiMZbpiaQL2jkwSB1icqYh2cfDfVxdx4df189oLKnC5fSwqPfgyP3hooxujYzAu3fDVmz"
 
 	xpub := pubConverter.Xpub(pub)
     fmt.Println(xpub)
