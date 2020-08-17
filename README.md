@@ -7,19 +7,18 @@ Go env is set apart from GOPATH
 
 > Deployment
 
- **go get -u "github.com/DefiLagos/pubkeyConverter"**
+ **go get -u "github.com/Godtide/tester/PubConverter.go"**
 
 # Full Example
 
  package convert
 
  import ( 
+
      "fmt"
-
-     "github.com/DefiLagos/pubkeyConverter"
+     "github.com/Godtide/tester/pubConverter.go"
         )
-
-
+        
 func main() {
 
 	pub := []byte("6CUGRUonZSQ4TWtTMmzXdrXDtypWKiKrhko4egpiMZbpiaQL2jkwSB1icqYh2cfDfVxdx4df189oLKnC5fSwqPfgyP3hooxujYzAu3fDVmz")

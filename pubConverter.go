@@ -17,10 +17,10 @@ var xpub = []byte("0488b21e")
 var ypub = []byte("049d7cb2")
 var zpub = []byte("04b24746")
 
-func Xpub(pub []byte) []byte {
+func Xpub(pub string) string {
 	data := base58.Decode(pub)
 	// rune splice
-	data == data[4:]
+	data = data[4:]
 	// verfiyyy Hex and base64Encode
 	db, err := decodeHex(xpub)
 	if err != nil {
@@ -31,14 +31,14 @@ func Xpub(pub []byte) []byte {
 	fmt.Printf("%s", f)
 
 	//bytes.join or bytes.buffer.writedString()
-	pubX := append(f, data)
-	return base58.encode(pubX)
+	pubX := append(f, data...)
+	return base58.Encode(pubX)
 }
 
-func Ypub(pub []byte) []byte {
+func Ypub(pub string) string {
 	data := base58.Decode(pub)
 	// rune splice
-	data == data[4:]
+	data = data[4:]
 	// verfiyyy Hex and base64Encode
 	db, err := decodeHex(ypub)
 	if err != nil {
@@ -49,14 +49,14 @@ func Ypub(pub []byte) []byte {
 	fmt.Printf("%s", f)
 
 	//bytes.join or bytes.buffer.writedString()
-	pubY := append(f, data)
-	return base58.encode(pubY)
+	pubY := append(f, data...)
+	return base58.Encode(pubY)
 }
 
-func Zpub(pub []byte) []byte {
+func Zpub(pub string) string {
 	data := base58.Decode(pub)
 	// rune splice
-	data == data[4:]
+	data = data[4:]
 	// verfiyyy Hex and base64Encode
 	db, err := decodeHex(zpub)
 	if err != nil {
@@ -67,8 +67,9 @@ func Zpub(pub []byte) []byte {
 	fmt.Printf("%s", f)
 
 	//bytes.join or bytes.buffer.writedString()
-	pubZ := append(f, data)
-	return base58.encode(pubZ)
+	pubZ := append(f, data...)
+	return base58.Encode(pubZ)
+
 }
 
 func decodeHex(input []byte) ([]byte, error) {
